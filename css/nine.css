@@ -1,0 +1,367 @@
+
+/* Global Rules */
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --main-color: #03a9f4;
+    --main-padding: 50px ;
+    --main-background:#f6f6f6;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 30px;
+}
+
+
+/* //////// */
+
+/* Start header */
+
+header {
+
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+header .container .logo {
+    margin: 0;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #03a9f4;
+}
+header .container .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+header .container ul li {
+    text-transform: capitalize;
+    cursor: pointer;
+    
+}
+
+header .container ul li:hover {
+    color: #03a9f4;
+}
+
+@media (max-width: 767px) {
+    header .container {
+        flex-direction: column;
+       
+    }
+    header .container .logo {
+        width: 100%;
+    }
+
+    header .container .link {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        
+    }
+    header .container ul li {
+        padding: 10px;
+        
+        
+
+    }
+}
+
+/* End header */
+
+/* Start services */
+
+.services {
+    background-color: var(--main-background);
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+.services .container {
+   
+}
+.services .container h1 {
+    margin: 0;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+}
+.services .container span {
+    color: var(--main-color);
+}
+.services .container .text p {
+    font-weight: 400;
+    text-align:center;
+    width: 100%;
+    line-height: 1.9;
+}
+
+/* End services */
+
+/* Start Landing */
+
+.landing {
+padding-top: var(--main-padding);
+padding-bottom: var(--main-padding);
+}
+.landing .container{
+   /*  display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+}
+.landing .container .box {
+    
+    text-align: center;
+}
+.landing .container .box img {
+    max-width: 100%;
+    width: 70px;
+    margin-top: 12px;
+}
+.landing .container .box .info {
+    
+}
+.landing .container .box .info h3 {
+    margin: 0;
+    text-transform: capitalize;
+}
+.landing .container .box .info p {
+    font-weight: 400;
+    color: #777;
+    font-size: 12px;
+    text-align: center;
+    
+}
+
+@media (max-width: 767px) {
+    .landing .container {
+        flex-direction: column;
+    }
+}
+
+
+/* End Landing */
+
+
+/* Start About US */
+
+.about {
+    background-color: var(--main-background);
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+
+}
+.about .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.about .container .image {
+    
+    
+}
+.about .container img {
+    width: 320px;
+    height: 315px;
+    max-width: 100%;
+    flex: 1;
+   
+}
+.about .container .info {
+    flex: 1;
+    height: 315px;
+  
+  
+}
+.about .container .info h3 {
+    text-transform: capitalize;
+    font-size: 30px;
+    letter-spacing: -2px;
+    font-weight: 600;
+    margin: 0;
+}
+.about .container .info p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* End About US */
+
+/* Start Card */
+
+.card {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+.card .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.card .container .box {
+    background-color: #b33939;
+    width: 100%;
+    height: 100px;
+}
+.card .container .box:nth-child(2) {
+    background-color: #227093 ;
+}
+.card .container .box:last-child {
+    background-color: #218c74;
+}
+.card .container .box {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card .container .box  h1 {
+    margin: 0;
+    font-size:45px;
+    font-weight: 600;
+}
+.card .container .box  p {
+    margin: 0;
+    font-size: 13px;
+}
+
+/* End Card */
+
+/* Start Our Skills */
+
+.skill {
+    background-color: var(--main-background);
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
+.skill .container {
+    
+}
+.skill .container h2 {
+    text-transform: capitalize;
+    text-align: center;
+}
+.skill .container .our {
+
+}
+.skill .container .our .htm {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    
+}
+.skill .container .our .htm h2 {
+    font-weight: normal;
+    text-transform: capitalize;
+    margin: 0;
+    flex-basis: 15%;
+    text-align: right;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0;
+    padding-right: 10px;
+}
+.skill .container .our .htm .width {
+    background-color: white;
+    height: 30px;
+    flex: 1;
+    
+}
+.skill .container .our .htm .width span {
+
+    display: block;
+    background-color: var(--main-color);
+    height: 100%;
+    position: relative;
+    color: white;
+    text-align: right;
+    
+    
+}
+.skill .container .our .htm .width span .tt{
+
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+/* End Our Skills*/
+
+/* Start Footer */
+
+.footer {
+    background-color: #333;
+}
+
+.footer .container {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.footer .container p {
+    margin: 0;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.footer .container p span {
+    color: var(--main-color);
+}
